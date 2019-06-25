@@ -16,6 +16,7 @@ import Stylesheet from "./components/Stylesheet";
 import Inline from "./components/Inline";
 import "./appStyles.css"; //importing a regular stylesheet
 import Styles from "./appStyles.module.css" //importing a modular stylesheet
+import Form from "./components/Form";
 
 class App extends Component {
   render() {
@@ -46,6 +47,9 @@ class App extends Component {
         <Inline/>
         <h1 className="error">Error</h1>
         <h1 className={Styles.success}>Success</h1>
+        <div>
+          <Form/>
+        </div>
       </div>
     );
   }
