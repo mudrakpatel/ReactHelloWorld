@@ -17,6 +17,7 @@ import Inline from "./components/Inline";
 import "./appStyles.css"; //importing a regular stylesheet
 import Styles from "./appStyles.module.css" //importing a modular stylesheet
 import Form from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
 
 class App extends Component {
   render() {
@@ -50,6 +51,7 @@ class App extends Component {
         <div>
           <Form/>
         </div>
+        <LifeCycleA/>
       </div>
     );
   }
