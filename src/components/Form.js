@@ -5,7 +5,9 @@ class Form extends Component{
  constructor(props){
    super(props);
    this.state = {
-     username: ""
+     username: "",
+     comments: "",
+     topic: "react"
    }
  }
 
@@ -15,14 +17,54 @@ class Form extends Component{
    });
  }
 
+ handleCommentsChange = (event) => {
+   this.setState({
+     comments: event.target.value
+   });
+ }
+
+ handleTopicChange = (event) => {
+   this.setState({
+     topic: event.target.value
+   });
+ }
+
+ handleFormSubmit = (event) => {
+   alert(`${this.state.username}\n
+          ${this.state.comments}\n
+          ${this.state.topic}`);
+   event.preventDefault();
+ }
+
   render(){
+    //Destructuring the state
+    const {username, comments, topic} = this.state;
     return(
-      <form>
+      <form onSubmit={this.handleFormSubmit}>
         <div>
           <label>Username</label>
           <input type="text"
-          value={this.state.username}
+          value={username}
           onChange={this.handleUsernameChange}/>
+        </div>
+        <div>
+          <label>Comments</label>
+          <textarea
+          value={comments}
+          onChange={this.handleCommentsChange}/>
+        </div>
+        <div>
+          <label>Topic</label>
+          <select
+          value={topic}
+          onChange={this.handleTopicChange}>
+            <option vlaue="react">React</option>
+            <option value="angular">Angular</option>
+            <option value="vue">Vue</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
         </div>
       </form>
     )
