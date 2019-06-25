@@ -1,0 +1,11 @@
+.primary {
+  color: orange;
+}
+
+.notPrimary {
+  color: purple;
+}
+
+.font-xl {
+  font-size: 72px;
+}
