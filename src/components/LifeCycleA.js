@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import LifeCycleB from "./LifeCycleB";
 
 class LifeCycleA extends Component{
 
@@ -24,6 +25,7 @@ class LifeCycleA extends Component{
     return(
       <div>
         LifeCycle A
+        <LifeCycleB/>
       </div>
     )
   }
