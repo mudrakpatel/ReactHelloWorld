@@ -2,7 +2,7 @@ import React, { PureComponent, Component } from 'react';
 import PureComp from './PureComponent';
 import RegularComp from './RegularComponent';
 
-class ParentComp extends Component {
+class ParentComp extends PureComponent {
 
   constructor(props) {
     super(props);
