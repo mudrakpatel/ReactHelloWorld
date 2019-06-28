@@ -1,8 +1,9 @@
 import React, { PureComponent, Component } from 'react';
 import PureComp from './PureComponent';
 import RegularComp from './RegularComponent';
+import MemoComponent from "./MemoComponent";
 
-class ParentComp extends PureComponent {
+class ParentComp extends Component {
 
   constructor(props) {
     super(props);
@@ -20,12 +21,13 @@ class ParentComp extends PureComponent {
   }
 
   render() {
-    console.log("ParentComp render");
+    console.log("*******************ParentComp render*******************");
     return (
       <div>
         Parent Component
-        <RegularComp name={this.state.name}/>
-        <PureComp name={this.state.name}/>
+        <MemoComponent name={this.state.name}/>
+        {/*<RegularComp name={this.state.name}/>
+        <PureComp name={this.state.name}/>*/}
       </div>
     );
   }
