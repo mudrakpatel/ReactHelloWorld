@@ -20,6 +20,8 @@ import Form from "./components/Form";
 import LifeCycleA from "./components/LifeCycleA";
 import FragmentDemo from "./components/FragmentDemo";
 import Table from "./components/Table";
+//import PureComp from './components/PureComponent';
+import ParentComp from "./components/ParentComp";
 
 class App extends Component {
   render() {
@@ -32,8 +34,8 @@ class App extends Component {
           <button>Action</button>
         </Greet>
         <Greet name="Kent" heroName="Dr.Fate"/>
-        {/*<Greet/>
-        <Welcome/>*/}
+        {/*<Greet/>*/}
+        <Welcome/>
         <Welcome name="Bruce" heroName="Batman"/>
         <Welcome name="Clark" heroName="Superman"/>
         <Welcome name="Kent" heroName="Dr.Fate"/>
@@ -54,8 +56,9 @@ class App extends Component {
           <Form/>
         </div>
         <LifeCycleA/>
-        {/*<FragmentDemo/>*/}
+        <FragmentDemo/>
         <Table/>
+        <ParentComp/>
       </div>
     );
   }
