@@ -18,6 +18,8 @@ import "./appStyles.css"; //importing a regular stylesheet
 import Styles from "./appStyles.module.css" //importing a modular stylesheet
 import Form from "./components/Form";
 import LifeCycleA from "./components/LifeCycleA";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
 
 class App extends Component {
   render() {
@@ -52,6 +54,8 @@ class App extends Component {
           <Form/>
         </div>
         <LifeCycleA/>
+        {/*<FragmentDemo/>*/}
+        <Table/>
       </div>
     );
   }
