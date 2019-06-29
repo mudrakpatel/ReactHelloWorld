@@ -24,6 +24,7 @@ import Table from "./components/Table";
 import ParentComp from "./components/ParentComp";
 import RefsDemo from './components/RefsDemo';
 import FocusInput from './components/FocusInput';
+import ForwardRefParentInput from './components/ForwardRefParentInput';
 
 class App extends Component {
   render() {
@@ -62,7 +63,8 @@ class App extends Component {
         <Table/>
         <ParentComp/>
         {/*<RefsDemo/>*/}
-        <FocusInput/>
+        {/*<FocusInput/>*/}
+        <ForwardRefParentInput/>
       </div>
     );
   }
