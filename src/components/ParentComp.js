@@ -3,7 +3,7 @@ import PureComp from './PureComponent';
 import RegularComp from './RegularComponent';
 import MemoComponent from "./MemoComponent";
 
-class ParentComp extends Component {
+class ParentComp extends PureComponent {
 
   constructor(props) {
     super(props);
