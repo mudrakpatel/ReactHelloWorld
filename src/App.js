@@ -28,6 +28,8 @@ import ForwardRefParentInput from './components/ForwardRefParentInput';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 class App extends Component {
   render() {
@@ -76,8 +78,10 @@ class App extends Component {
           <Hero heroName="Superman"/>
         </ErrorBoundary>
         <ErrorBoundary>
-          <Hero heroName="Joker"/>
+          <Hero heroName="Dr. Fate"/>
         </ErrorBoundary>
+        <ClickCounter/>
+        <HoverCounter/>
       </div>
     );
   }
