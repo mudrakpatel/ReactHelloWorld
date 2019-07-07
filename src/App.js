@@ -80,8 +80,8 @@ class App extends Component {
         <ErrorBoundary>
           <Hero heroName="Dr. Fate"/>
         </ErrorBoundary>
-        <ClickCounter/>
-        <HoverCounter/>
+        <ClickCounter name="Bruce"/>
+        <HoverCounter name="Clark"/>
       </div>
     );
   }

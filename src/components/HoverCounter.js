@@ -9,7 +9,7 @@ class HoverCounter extends Component {
     return (
       <div>
         <h2 onMouseOver={incrementCount}>
-          Hovered {count} times
+          {name} Hovered {count} times
         </h2>
       </div>
     );
@@ -17,4 +17,4 @@ class HoverCounter extends Component {
 
 }
 
-export default withCounter(HoverCounter);
+export default withCounter(HoverCounter, 1);
