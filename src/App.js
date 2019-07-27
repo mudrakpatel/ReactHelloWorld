@@ -99,9 +99,9 @@ class App extends Component {
           (count, incrementCount) =>
           <HoverCounterTwo count={count} incrementCount={incrementCount} />
         }/>
-        <UserProvider value="Jason">
+        {/*<UserProvider value="Jason">*/}
           <ComponentC/>
-        </UserProvider>
+        {/*</UserProvider>*/}
       </div>
     );
   }
